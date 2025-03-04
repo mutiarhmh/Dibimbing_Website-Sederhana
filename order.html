@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muti Flories - Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Muti Flories</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Order Your Flowers</h2>
+        <form action="submit_order.php" method="POST">
+            <label for="flower">Warna bunga yang dipesan:</label>
+            <input type="text" id="flower" name="flower" readonly>
+            
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Alamat Pengiriman:</label>
+            <textarea id="address" name="address" required></textarea>
+            
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="payment">Metode Pembayaran:</label>
+            <select id="payment" name="payment">
+                <option value="transfer">Transfer Bank</option>
+                <option value="ewallet">E-Wallet</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+</body>
+</html>

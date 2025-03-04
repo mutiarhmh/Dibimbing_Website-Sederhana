@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muti Flories - Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Muti Flories</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Shop Our Beautiful Flowers</h2>
+        <div class="flower-container">
+            <div class="flower">
+                <img src="rose.jpeg" alt="Rose">
+                <h3>Rose</h3>
+                <p>Rp 150.000</p>
+                <button onclick="orderFlower('Rose', 150000)">Pesan</button>
+            </div>
+            <div class="flower">
+                <img src="tulip.jpeg" alt="Tulip">
+                <h3>Tulip</h3>
+                <p>Rp 120.000</p>
+                <button onclick="orderFlower('Tulip', 120000)">Pesan</button>
+            </div>
+            <div class="flower">
+                <img src="lily.jpeg" alt="Lily">
+                <h3>Lily</h3>
+                <p>Rp 110.000</p>
+                <button onclick="orderFlower('Lily', 110000)">Pesan</button>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function orderFlower(name, price) {
+            window.location.href = `order.html?flower=${name}&price=${price}`;
+        }
+    </script>
+</body>
+</html>
