@@ -94,6 +94,22 @@ section {
     margin-top: 60px;
 }
 
+.hero {
+    padding: 40px 20px;
+}
+
+.hero .container p {
+    margin-bottom: 1px;
+}
+
+.about-img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 .flower-container {
     display: flex;
     justify-content: center;
@@ -233,6 +249,22 @@ button {
     cursor: pointer;
     transition: background 0.3s;
 }
+
 button:hover {
     background: #ff1493;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-img {
+        max-width: 100%;
+    }
+
+    .btn-container {
+        margin-top: 10px;
+    }
 }
