@@ -254,17 +254,3 @@ button:hover {
     background: #ff1493;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .about-img {
-        max-width: 100%;
-    }
-
-    .btn-container {
-        margin-top: 10px;
-    }
-}
